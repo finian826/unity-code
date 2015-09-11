@@ -1,12 +1,12 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Bricks.cs">
     <Files>
       <File FileName="Assets\Scripts\Ball.cs" Line="40" Column="1" />
-      <File FileName="Assets\Scripts\Bricks.cs" Line="45" Column="30" />
-      <File FileName="Assets\Scripts\LoseCollider.cs" Line="19" Column="1" />
-      <File FileName="Assets\Scripts\Paddle.cs" Line="47" Column="1" />
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\Bricks.cs" Line="48" Column="11" />
+      <File FileName="Assets\Scripts\LoseCollider.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Paddle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="18" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

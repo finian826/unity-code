@@ -43,13 +43,16 @@ public class Bricks : MonoBehaviour {
 			breakableCount--;
 			//Debug.Log(breakableCount);
 			levelManager.BrickDestroyed();
-			
-			GameObject smokepuff =Instantiate(smoke,gameObject.transform.position, Quaternion.identity) as GameObject;
-			smokepuff.particleSystem.startColor = gameObject.GetComponent<SpriteRenderer>().color;
+			PuffSmoke();
 			Destroy(gameObject);
 		} else {
 			LoadSprites();
 		}
+	}
+	void PuffSmoke(){
+		GameObject smokepuff =Instantiate(smoke,gameObject.transform.position, Quaternion.identity) as GameObject;
+		smokepuff.particleSystem.startColor = gameObject.GetComponent<SpriteRenderer>().color;
+		
 	}
 	
 	void LoadSprites(){
