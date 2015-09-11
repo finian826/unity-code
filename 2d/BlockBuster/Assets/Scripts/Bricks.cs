@@ -5,7 +5,7 @@ public class Bricks : MonoBehaviour {
 
 	public static int breakableCount = 0;
 	public AudioClip crack;
-	
+	public GameObject smoke;
 	public Sprite[] hitSprites;
 	
 	private bool isBreakable;
@@ -43,6 +43,9 @@ public class Bricks : MonoBehaviour {
 			breakableCount--;
 			//Debug.Log(breakableCount);
 			levelManager.BrickDestroyed();
+			
+			GameObject smokepuff =Instantiate(smoke,gameObject.transform.position, Quaternion.identity) as GameObject;
+			smokepuff.particleSystem.startColor = gameObject.GetComponent<SpriteRenderer>().color;
 			Destroy(gameObject);
 		} else {
 			LoadSprites();
@@ -53,6 +56,8 @@ public class Bricks : MonoBehaviour {
 		int spriteIndex = timesHit -1;
 		if (hitSprites[spriteIndex]) {
 			this.GetComponent<SpriteRenderer>().sprite =hitSprites[spriteIndex];
+		} else {
+			Debug.LogError("Missing Sprite!");
 		}
 	}
 	// TODO remove this method once we can actually win

@@ -14,6 +14,20 @@ TextureImporter:
     21300018: specialhit2
     21300020: special
     21300022: spare
+    21300024: Bricks_0
+    21300026: Bricks_1
+    21300028: Bricks_2
+    21300030: Bricks_3
+    21300032: Bricks_4
+    21300034: Bricks_5
+    21300036: Bricks_6
+    21300038: Bricks_7
+    21300040: Bricks_8
+    21300042: Bricks_9
+    21300044: Bricks_10
+    21300046: Bricks_11
+    21300048: Bricks_12
+    21300050: Bricks_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,122 +69,142 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: brick1
+    - name: Bricks_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 250
+        y: 301
         width: 127
         height: 41
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hit 2-1
+    - name: Bricks_1
       rect:
         serializedVersion: 2
         x: 130
-        y: 252
+        y: 303
         width: 126
         height: 39
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: left
+    - name: Bricks_2
       rect:
         serializedVersion: 2
         x: 1
-        y: 209
+        y: 260
         width: 62
         height: 39
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: right
+    - name: Bricks_3
       rect:
         serializedVersion: 2
         x: 65
-        y: 209
+        y: 260
         width: 63
         height: 39
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: specialhit1
+    - name: Bricks_4
       rect:
         serializedVersion: 2
         x: 130
-        y: 169
+        y: 220
         width: 126
         height: 80
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hit 1-1
+    - name: Bricks_5
       rect:
         serializedVersion: 2
         x: 2
-        y: 167
+        y: 218
         width: 126
         height: 40
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hit 1-2
+    - name: Bricks_6
       rect:
         serializedVersion: 2
         x: 2
-        y: 125
+        y: 176
         width: 126
         height: 40
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hit 2-2
+    - name: Bricks_7
       rect:
         serializedVersion: 2
         x: 130
-        y: 128
+        y: 179
         width: 126
         height: 39
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: brick2
+    - name: Bricks_8
       rect:
         serializedVersion: 2
         x: 2
-        y: 85
+        y: 136
         width: 126
         height: 39
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: specialhit2
+    - name: Bricks_9
       rect:
         serializedVersion: 2
         x: 130
-        y: 45
+        y: 96
         width: 126
         height: 80
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: special
+    - name: Bricks_10
       rect:
         serializedVersion: 2
         x: 2
-        y: 2
+        y: 53
         width: 125
         height: 80
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spare
+    - name: Bricks_11
       rect:
         serializedVersion: 2
         x: 130
-        y: 2
+        y: 53
         width: 126
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bricks_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bricks_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 5
+        width: 127
         height: 40
       alignment: 0
       pivot: {x: .5, y: .5}
