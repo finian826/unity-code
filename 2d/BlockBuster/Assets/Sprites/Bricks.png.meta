@@ -109,15 +109,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bricks_4
+    - name: 
       rect:
         serializedVersion: 2
         x: 130
         y: 220
         width: 126
         height: 80
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bricks_5
       rect:
@@ -159,25 +159,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bricks_9
+    - name: 
       rect:
         serializedVersion: 2
         x: 130
         y: 96
         width: 126
         height: 80
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bricks_10
+    - name: 
       rect:
         serializedVersion: 2
         x: 2
         y: 53
         width: 125
         height: 80
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .25}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bricks_11
       rect:
