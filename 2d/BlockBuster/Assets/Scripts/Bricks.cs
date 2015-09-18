@@ -41,7 +41,7 @@ public class Bricks : MonoBehaviour {
 		//SimulateWin();
 		if (timesHit >= maxHits) {
 			breakableCount--;
-			//Debug.Log(breakableCount);
+			Debug.Log(breakableCount);
 			levelManager.BrickDestroyed();
 			PuffSmoke();
 			Destroy(gameObject);

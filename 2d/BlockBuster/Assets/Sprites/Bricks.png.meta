@@ -28,6 +28,8 @@ TextureImporter:
     21300046: Bricks_11
     21300048: Bricks_12
     21300050: Bricks_13
+    21300052: special1hit
+    21300054: special2hit
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -109,7 +111,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 
+    - name: special1hit
       rect:
         serializedVersion: 2
         x: 130
@@ -159,7 +161,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 
+    - name: special2hit
       rect:
         serializedVersion: 2
         x: 130
