@@ -1,3 +1,11 @@
+2015-09-18  Terry  <tmacmill@gmail.com>
+
+	* Ball.cs:
+	* Bricks.cs:
+	* LevelManager.cs:
+	* LoseCollider.cs:
+	* LevelGenerator.cs: 
+
 2015-09-11  Terry  <tmacmill@gmail.com>
 
 	* Bricks.cs: 

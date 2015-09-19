@@ -7,23 +7,32 @@ public class Bricks : MonoBehaviour {
 	public AudioClip crack;
 	public GameObject smoke;
 	public Sprite[] hitSprites;
+	public int blockHitPts = 15;
+	public int blockDestPts = 25;
 	
 	private bool isBreakable;
 	private int timesHit;
 	private LevelManager levelManager;
+	private LevelGenerator levelGenerator;
+	private TextController textControl;
 	
 	// Use this for initialization
 	void Start () {
+		CountBreakable();
+		timesHit = 0;
+		levelManager = GameObject.FindObjectOfType<LevelManager>();
+		levelGenerator = GameObject.FindObjectOfType<LevelGenerator>();
+		textControl = GameObject.FindObjectOfType<TextController>();
+		
+	}
+	
+	public void CountBreakable() {
 		isBreakable = (this.tag == "Breakable");
 		// Keep track of breakable bricks
 		if (isBreakable) {
 			breakableCount++;
 		}
-		timesHit = 0;
-		levelManager = GameObject.FindObjectOfType<LevelManager>();
-		
 	}
-	
 	// Update is called once per frame
 	void Update () {
 	
@@ -41,11 +50,18 @@ public class Bricks : MonoBehaviour {
 		//SimulateWin();
 		if (timesHit >= maxHits) {
 			breakableCount--;
-			Debug.Log(breakableCount);
-			levelManager.BrickDestroyed();
+			//Debug.Log(breakableCount);
+			//increse score
+			LevelManager.GameScore = LevelManager.GameScore + blockDestPts;
+			textControl.PrintScore();
+			//levelManager.BrickDestroyed();
+			levelGenerator.BrickDestroyed();
 			PuffSmoke();
 			Destroy(gameObject);
 		} else {
+			//increase score
+			LevelManager.GameScore = LevelManager.GameScore + blockHitPts;
+			textControl.PrintScore();
 			LoadSprites();
 		}
 	}

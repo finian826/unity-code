@@ -1,3 +1,11 @@
+2015-09-18  Terry  <tmacmill@gmail.com>
+
+	* BlockBuster.sln:
+	* BlockBuster.userprefs:
+	* BlockBuster-csharp.sln:
+	* Assembly-CSharp.csproj:
+	* Assembly-CSharp-vs.csproj: 
+
 2015-09-11  Terry  <>
 
 	* BlockBuster.userprefs: 

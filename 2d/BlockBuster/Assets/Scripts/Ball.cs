@@ -13,7 +13,9 @@ public class Ball : MonoBehaviour {
 	void Start () {
 		paddle = GameObject.FindObjectOfType<Paddle>();
 		paddleToBallVector = this.transform.position - paddle.transform.position;
-		print (paddleToBallVector.y);
+		//print (paddleToBallVector.y);
+		
+		BallReset();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +36,14 @@ public class Ball : MonoBehaviour {
 		if(hasStarted) {
 			audio.Play ();
 			rigidbody2D.velocity += tweak;
+		}
+	}
+	
+	public void BallReset() {
+		if (hasStarted){
+			hasStarted = false;
+			paddle = GameObject.FindObjectOfType<Paddle>();
+			this.transform.position = paddle.transform.position + paddleToBallVector;
 		}
 	}
 }
