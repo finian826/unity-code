@@ -9,7 +9,7 @@ public class LevelGenerator : MonoBehaviour {
 	public Sprite[] Background;
 	
 	private bool DataLoaded = false;
-	private int LevelCounter = 6;
+	private int LevelCounter = 7;
 	private Bricks bricks;
 	private Ball ball;
 	
@@ -40,7 +40,7 @@ public class LevelGenerator : MonoBehaviour {
 		ball.BallReset();
 		
 		BuildLevel(pseudoRandom.Next(1,LevelCounter + 1));
-		//BuildLevel(6);
+		//BuildLevel(7);
 		//bricks.CountBreakable();
 		PlayFieldBG = GameObject.Find("PlaySpace").transform.Find ("Background").gameObject;
 		PlayFieldBG.GetComponent<SpriteRenderer>().sprite = Background[pseudoRandom.Next(1,Background.Length)];
@@ -94,7 +94,8 @@ public class LevelGenerator : MonoBehaviour {
 		// store level data to BlockLevels
 		DataLoaded = true;
 		BlockLevels = new int[LevelCounter,16,32];
-		int lvlCount, rowCount, colCount;
+		int lvlCount, rowCount, colCount, lastCol;
+		float tempnum;
 		
 		string seed = System.DateTime.Now.ToString();
 		//Debug.Log(seed);
@@ -432,7 +433,60 @@ public class LevelGenerator : MonoBehaviour {
 		BlockLevels[lvlCount, 8, 18] = 1;
 		
 		// Level --
-		//lvlCount = 3; // or what ever lvl
+		lvlCount = 6; // or what ever lvl
+		rowCount = 0;
+		colCount = 0;
+		
+		do {
+			colCount = 0;
+			tempnum = pseudoRandom.Next(1,101);
+			if (tempnum > 0 && tempnum < 20) {
+				BlockLevels[lvlCount, rowCount, colCount] = 100;
+			} else if (tempnum >=20 && tempnum < 45) {
+				BlockLevels[lvlCount, rowCount, colCount] = 1;
+			} else if (tempnum >=45 && tempnum < 65) {
+				BlockLevels[lvlCount, rowCount, colCount] = 2;
+			} else if (tempnum >=65 && tempnum < 85) {
+				BlockLevels[lvlCount, rowCount, colCount] = 3;
+			} else if (tempnum >=85 && tempnum < 101) {
+				BlockLevels[lvlCount, rowCount, colCount] = 5;
+				//Debug.Log("5 on col " + colCount);
+			}
+			rowCount++;
+		} while (rowCount <= 15);
+		
+		colCount = 1;
+		rowCount = 0;
+		do {
+			rowCount = 0;
+			do {
+				tempnum = pseudoRandom.Next(1,101);
+				lastCol = colCount -1;
+				if (BlockLevels[lvlCount, rowCount, lastCol] == 100 || BlockLevels[lvlCount, rowCount, lastCol] == 0) {
+					if (tempnum > 0 && tempnum < 15) {
+						BlockLevels[lvlCount, rowCount, colCount] = 100;
+					} else if (tempnum >=15 && tempnum < 40) {
+						BlockLevels[lvlCount, rowCount, colCount] = 1;
+					} else if (tempnum >=40 && tempnum < 65) {
+						BlockLevels[lvlCount, rowCount, colCount] = 2;
+					} else if (tempnum >=65 && tempnum < 90) {
+						BlockLevels[lvlCount, rowCount, colCount] = 3;
+					} else if (tempnum >=90 && tempnum < 101) {
+						BlockLevels[lvlCount, rowCount, colCount] = 5;
+						//Debug.Log("5 on col " +colCount);
+					} else {
+						BlockLevels[lvlCount, rowCount, colCount] = 100;
+					}
+					
+				}
+				rowCount++;
+			} while (rowCount <= 15);
+			colCount++;
+			//Debug.Log(" Col " + colCount);
+		} while (colCount <= 31);
+		
+		// Level --
+		//lvlCount = 7; // or what ever lvl
 		//rowCount = 0;
 		//colCount = 0;
 		
