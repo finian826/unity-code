@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\BasketBall Shooter2D\Assets\Basketball2D\Scripts\BallControls.cs">
+    <Files>
+      <File FileName="..\BasketBall Shooter2D\Assets\Basketball2D\Scripts\Responsive.cs" Line="16" Column="30" />
+      <File FileName="..\BasketBall Shooter2D\Assets\Basketball2D\Scripts\BallControls.cs" Line="23" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
